@@ -18,6 +18,5 @@ Rails.application.routes.draw do
 
   resources :splash, only: [:index]
   resources :home, only: [:index, :show]
-
-  get '/logout', to: 'splash#logout', as: :logout
+  
 end
