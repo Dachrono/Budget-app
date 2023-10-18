@@ -3632,3 +3632,130 @@ Processing by SplashController#index as HTML
 Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1602)
 
 
+Started GET "/users/sign_up" for ::1 at 2023-10-18 14:32:31 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 196)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 228)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1969)
+  Rendered partials/_logout.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3136)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4521)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-10-18 14:32:34 -0600
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.9ms | Allocations: 309)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 1156)
+  Rendered partials/_logout.html.erb (Duration: 0.8ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 2213)
+Completed 200 OK in 40ms (Views: 34.7ms | ActiveRecord: 0.0ms | Allocations: 2907)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-18 14:33:04 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 215)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1177)
+  Rendered partials/_logout.html.erb (Duration: 0.2ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2234)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 2885)
+
+
+Started POST "/users" for ::1 at 2023-10-18 14:33:47 -0600
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Andres Zamorano", "email"=>"andy@no.tiene", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "andy@no.tiene"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Andres Zamorano"], ["email", "andy@no.tiene"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2023-10-18 20:33:47.314625"], ["unconfirmed_email", nil], ["created_at", "2023-10-18 20:33:47.314467"], ["updated_at", "2023-10-18 20:33:47.314467"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.5ms | Allocations: 338)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 5.4ms
+Delivered mail 6530412b549e8_392f3f0c46892@Andy-Lap.mail (20.2ms)
+Date: Wed, 18 Oct 2023 14:33:47 -0600
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: andy@no.tiene
+Message-ID: <6530412b549e8_392f3f0c46892@Andy-Lap.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome andy@no.tiene!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=DArdUDSH_JCLCiA1FZ5M">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 303 See Other in 317ms (ActiveRecord: 4.6ms | Allocations: 24280)
+
+
+Started GET "/" for ::1 at 2023-10-18 14:33:47 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 56)
+  Rendered partials/_logout.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1215)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 1807)
+
+
+Started GET "/users/confirmation?confirmation_token=[FILTERED]" for ::1 at 2023-10-18 14:33:55 -0600
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (9.8ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2023-10-18 20:33:55.943576"], ["updated_at", "2023-10-18 20:33:55.944626"], ["id", 6]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 34ms (ActiveRecord: 12.8ms | Allocations: 5635)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-10-18 14:33:55 -0600
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1227)
+  Rendered partials/_logout.html.erb (Duration: 0.2ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2381)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3111)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-10-18 14:34:13 -0600
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"andy@no.tiene", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andy@no.tiene"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 261ms (ActiveRecord: 0.6ms | Allocations: 2555)
+
+
+Started GET "/" for ::1 at 2023-10-18 14:34:13 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 19ms (ActiveRecord: 0.4ms | Allocations: 1168)
+
+
+Started GET "/home/index" for ::1 at 2023-10-18 14:34:13 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 5.1ms | Allocations: 1014)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2264)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 2499)
+
+
