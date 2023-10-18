@@ -3759,3 +3759,198 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 2499)
 
 
+Started DELETE "/users/sign_out" for ::1 at 2023-10-18 15:42:01 -0600
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 38ms (ActiveRecord: 7.4ms | Allocations: 10688)
+
+
+Started GET "/" for ::1 at 2023-10-18 15:42:01 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 275)
+  Rendered partials/_logout.html.erb (Duration: 0.5ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1899)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3405)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-18 15:42:03 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 3.8ms | Allocations: 631)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 2513)
+  Rendered partials/_logout.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 3749)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 5474)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-18 15:42:40 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 632)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2694)
+  Rendered partials/_logout.html.erb (Duration: 0.7ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4298)
+Completed 200 OK in 38ms (Views: 16.4ms | ActiveRecord: 7.0ms | Allocations: 11601)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-18 15:42:53 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 632)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2696)
+  Rendered partials/_logout.html.erb (Duration: 1.1ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4300)
+Completed 200 OK in 110ms (Views: 14.4ms | ActiveRecord: 4.0ms | Allocations: 11547)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-18 15:42:58 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1431)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1528)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 5.1ms | Allocations: 8843)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :full name %><br />
+    <%= f.text_field :name, placeholder: "Name", autocomplete: "name", class: 'input-with-label' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2>Sign up</h2>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:      <div class="field">
+7:        <%= f.label :full name %><br />
+8:        <%= f.text_field :name, placeholder: "Name", autocomplete: "name", class: 'input-with-label' %>
+9:      </div>
+10:    
+11:      <div class="field">
+12:        <%= f.label :email %><br />
+13:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+14:      </div>
+15:    
+16:      <div class="field">
+17:        <%= f.label :password %>
+18:        <% if @minimum_password_length %>
+19:        <em>(<%= @minimum_password_length %> characters minimum)</em>
+20:        <% end %><br />
+21:        <%= f.password_field :password, autocomplete: "new-password" %>
+22:      </div>
+23:    
+24:      <div class="field">
+25:        <%= f.label :password_confirmation %><br />
+26:        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+27:      </div>
+28:    
+29:      <div class="actions">
+30:        <%= f.submit "Sign up" %>
+31:      </div>
+32:    <% end %>
+33:    
+34:    <%= render "devise/shared/links" %>
+  
+app/views/devise/registrations/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2023-10-18 15:43:10 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 632)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2665)
+  Rendered partials/_logout.html.erb (Duration: 0.5ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4269)
+Completed 200 OK in 33ms (Views: 17.6ms | ActiveRecord: 3.2ms | Allocations: 11570)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-18 15:43:19 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 4.2ms | Allocations: 632)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2656)
+  Rendered partials/_logout.html.erb (Duration: 1.1ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4260)
+Completed 200 OK in 36ms (Views: 19.6ms | ActiveRecord: 4.8ms | Allocations: 11548)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-18 15:44:08 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 632)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2574)
+  Rendered partials/_logout.html.erb (Duration: 0.7ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4171)
+Completed 200 OK in 35ms (Views: 20.2ms | ActiveRecord: 2.7ms | Allocations: 11413)
+
+
+Started GET "/users/confirmation/new" for ::1 at 2023-10-18 15:44:13 -0600
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 327)
+  Rendered devise/confirmations/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1562)
+  Rendered partials/_logout.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2768)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3486)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-10-18 15:44:20 -0600
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 319)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1629)
+  Rendered partials/_logout.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2793)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 4227)
+
+

@@ -4,7 +4,8 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.text_field :name, placeholder: "Name", autocomplete: "name", class: 'input-with-label' %>
+    <%= f.label :name, "Full name"%><br />
+    <%= f.text_field :name, autocomplete: "name", class: 'input-with-label' %>
   </div>
 
   <div class="field">
