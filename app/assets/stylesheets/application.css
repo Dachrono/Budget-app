@@ -14,6 +14,31 @@
  *= require_self
  */
 
+ /* #3778c2 azul
+ #5fb523 verde
+ #434c55 gray fuerte
+ #545C67 gray casi fuerte
+ #86898E gray medio
+ #989DA3 gray claro 
+ */
+
+@import "splash_index.css";
+@import "devise_session_new.css";
+@import "devise_regis_new.css";
+@import "home_new.css";
+@import "payment_show.css";
+
+
+ @font-face {
+  font-family: 'ProximaNova';
+  src: url('Proxima.otf') format('opentype');
+}
+
+body {
+  font-family: 'ProximaNova', sans-serif;
+  background-color: #F5F6F8;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -24,4 +49,57 @@
   width: 90%;
   display: flex;
   justify-content: end;
+}
+
+.bar {
+  padding: 30px 10px 10px 10px;
+  background-color: #3778c2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.bar a {
+  color: white;
+  width: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.bar input{
+  all: unset;
+}
+
+.field {
+  border-bottom: 1px solid rgba(152, 158, 164, 0.5);
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  padding-left: 15px;
+  border: none;
+}
+
+.button {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #5fb523;
+  margin-top: 25px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  padding: 5% 30% 5% 30%;
+  border: 1px solid white;
+  color: white;
 }
