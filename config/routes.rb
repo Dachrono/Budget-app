@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  get 'home/show'
-  get 'splash/index'
   devise_for :users, controllers: {
   registrations: 'users/registrations',
   sessions: 'users/sessions'
@@ -17,6 +14,10 @@ Rails.application.routes.draw do
   root "splash#index"
 
   resources :splash, only: [:index]
-  resources :home, only: [:index, :show]
+  resources :home, only: [:index, :new, :create]
+  resources :payment, only: [:show, :create]
+
+  get 'payment/new/:id', to: 'payment#new', as: 'add_new_payment'
+  post 'payment/create/:id', to: 'payment#create', as: 'create_new_payment'
   
 end
