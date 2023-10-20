@@ -1,24 +1,18 @@
-<div class="contNewpayment">
-<h1>New payment</h1>
-<h2>for <%= @category %></h2>
-
-<%= form_with(model: @payment, url: create_new_payment_path(@category), method: :post) do |form| %>
-
-    <div class="form">    
-        <div class="form">
-            <%= form.label :name, "Name" %>
-            <%= form.text_field :name, :required => true %>
-        </div>
-
-        <div class="form">
-            <%= form.label :amount, "Amount" %>
-            <%= form.number_field :amount, :required => true %>
-        </div>
-  
-        <div class="form">
-            <%= form.submit 'Create payment', class: "FormButton" %>
-        </div>
+<%= form_with(model: @payment, url: create_new_payment_path(@category), method: :post) do |f| %>
+    <div class="bar">
+        <%= link_to payment_path(@category) do %>  
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+        <% end %>
+        <h2>New transaction</h2>
+        <%= f.submit 'Create' %>
+    </div>
+   
+    <div class="field">
+        <%= f.text_field :name, placeholder: 'Name', :required => true %>
+    </div>
+    <div class="field">
+        <%= f.number_field :amount, placeholder: 'Amount', :required => true, step: "0.01" %>
     </div>
   <% end %>
-
-  <%= link_to 'Back', payment_path(@category) %>
