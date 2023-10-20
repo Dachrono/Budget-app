@@ -1,0 +1,14 @@
+.email {
+    margin-top: 20px;
+}
+.fooLogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.fooLogin a {
+    color: #989DA3;
+    font-size: 15px;
+    text-decoration: none;
+}
