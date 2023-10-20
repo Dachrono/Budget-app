@@ -1,37 +1,34 @@
 .total {
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba(152, 158, 164, 0.5);
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(152, 158, 164, 0.5);
 }
 
-.total p{
-    color: #989DA3;
+.total p {
+  color: #989da3;
 }
 
 .transaction {
-    width: 100%;
-    margin-bottom: 10px;
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba(152, 158, 164, 0.5);
+  width: 100%;
+  margin-bottom: 10px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(152, 158, 164, 0.5);
 }
 
 .fakeNab {
-    background-color: #3778c2;
-    padding: 30px 10px 5px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.fakeNab p {
+  background-color: #3778c2;
+  padding: 30px 10px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }

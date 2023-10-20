@@ -1,23 +1,23 @@
 
 .picture {
-    background-color: white;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    color: #989DA3;
-    padding-left: 15px;
-    border-top: 1px solid rgba(152, 158, 164, 0.5);
-    border-bottom: 1px solid rgba(152, 158, 164, 0.5);
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #989da3;
+  padding-left: 15px;
+  border-top: 1px solid rgba(152, 158, 164, 0.5);
+  border-bottom: 1px solid rgba(152, 158, 164, 0.5);
 }
 
 .picture svg {
-    margin-right: 10px;
-    width: 50px;
+  margin-right: 10px;
+  width: 50px;
 }
 
 .fooLogin {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
