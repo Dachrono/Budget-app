@@ -1,0 +1,23 @@
+Category <%= @category.name %>
+<%= @category.Totalamount %>
+
+
+<% @payments.each do |item| %>
+    <div>
+        <%= item.payment.name %>
+        <%= item.payment.amount %>
+    </div>    
+<% end %>
+
+<br /><br />
+
+<%= link_to 'New payment', add_new_payment_path(@category.id) %>
+
+<br /><br />    
+
+<%= link_to 'Back', root_path %>
+
+
+
+
+
