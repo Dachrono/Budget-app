@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
 
   has_many :categories
-  has_many :payments       
+  has_many :payments
 
   validates :name, presence: true
 end

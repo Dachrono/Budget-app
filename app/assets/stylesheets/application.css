@@ -14,15 +14,14 @@
  *= require_self
  */
 
- * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  .out {
-    width: 90%;
-    display: flex;
-    justify-content: end;
-  }
-
+.out {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+}

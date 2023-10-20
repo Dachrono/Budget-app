@@ -12,7 +12,7 @@ class HomeController < ApplicationController
     @category = Category.new
     @user_owner = current_user
   end
-  
+
   def create
     @category_data = Category.new(categorynew_params)
     @category_data.user_id = current_user.id
@@ -25,7 +25,7 @@ class HomeController < ApplicationController
     redirect_to home_index_path
   end
 
-  private 
+  private
 
   def categorynew_params
     params.require(:category).permit(:name, :icon)
