@@ -39,7 +39,7 @@
 **[Budget app]** The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 Link to the presentation video
-[link to video](https://www.loom.com/share/347305db01174bd5aef3bf175eab2819?sid=5a8a824c-3b0b-4530-bc5f-63fbedf4e45c)
+[link to video](https://drive.google.com/file/d/1ibJq9tWSPGkOQFgPRTZ9GjhmOoq83aU0/view?usp=sharing)
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -79,7 +79,7 @@ Link to the presentation video
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://reactcapstonproject.onrender.com/)
+- [Live Demo Link](https://budget-app-hisl.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
