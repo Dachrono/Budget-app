@@ -5,8 +5,10 @@ RSpec.describe 'Transactions', type: :system do
   before do
     @category = create(:category, name: 'Category Name', Totalamount: 100.00)
     @payments = [
-      create(:category_payment, category: @category, payment: create(:payment, name: 'Payment 1', amount: 50.00, created_at: Time.now)),
-      create(:category_payment, category: @category, payment: create(:payment, name: 'Payment 2', amount: 60.00, created_at: Time.now))
+      create(:category_payment, category: @category,
+                                payment: create(:payment, name: 'Payment 1', amount: 50.00, created_at: Time.now)),
+      create(:category_payment, category: @category,
+                                payment: create(:payment, name: 'Payment 2', amount: 60.00, created_at: Time.now))
     ]
   end
 

@@ -13,7 +13,6 @@ RSpec.describe 'New Transaction Form', type: :system do
     expect(page).to have_button('Create')
 
     fill_in 'Name', with: 'Transaction Name'
-    fill_in 'Amount', with: 50.00  
+    fill_in 'Amount', with: 50.00
   end
 end
-

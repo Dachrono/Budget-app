@@ -11,7 +11,7 @@ RSpec.describe PaymentController, type: :controller do
     it 'assigns @category and @payments' do
       category = create(:category)
       payment = create(:payment)
-      category_payment = create(:category_payment, category: category, payment: payment)
+      category_payment = create(:category_payment, category:, payment:)
 
       get :show, params: { id: category.id }
 
@@ -22,7 +22,7 @@ RSpec.describe PaymentController, type: :controller do
     it 'updates the category Totalamount' do
       category = create(:category)
       payment = create(:payment, amount: 100.0)
-      category_payment = create(:category_payment, category: category, payment: payment)
+      create(:category_payment, category:, payment:)
 
       get :show, params: { id: category.id }
 
