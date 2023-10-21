@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.login {
+  background-color: #3778c2;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px 20px 10px;
+  margin: 0 15px 0 15px;
+}
+
+.login a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px 20px 10px;
+  margin: 0 15px 0 15px;
+}
+
+.signup a {
+  color: #989da3;
+  font-size: 20px;
+  text-decoration: none;
+}

@@ -1,0 +1,28 @@
+.category {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category a {
+  padding: 15px 15px 15px 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+}
+
+.text {
+  color: #545c67;
+}
+
+.icon {
+  border: 1px solid #989da3;
+  width: 50px;
+  height: 50px;
+}
