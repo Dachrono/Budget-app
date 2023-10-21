@@ -18339,3 +18339,180 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 0.9ms | Allocations: 3962)
 
 
+Started GET "/" for ::1 at 2023-10-20 19:31:15 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 134.2ms | Allocations: 47609)
+  Rendered layout layouts/application.html.erb (Duration: 137.4ms | Allocations: 49414)
+Completed 200 OK in 164ms (Views: 143.8ms | ActiveRecord: 0.0ms | Allocations: 55277)
+
+
+Started GET "/" for ::1 at 2023-10-20 19:31:34 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 815)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 2244)
+Completed 200 OK in 69ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 3915)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-20 19:31:42 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 242)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2250)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3971)
+Completed 200 OK in 81ms (Views: 15.4ms | ActiveRecord: 17.0ms | Allocations: 24465)
+
+
+Started GET "/" for ::1 at 2023-10-20 19:31:44 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 694)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 2088)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 2701)
+
+
+Started GET "/" for ::1 at 2023-10-20 19:31:57 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2080)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2459)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-20 19:32:24 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 543)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2074)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2761)
+
+
+Started GET "/users" for ::1 at 2023-10-20 19:32:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/user" for ::1 at 2023-10-20 19:32:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/" for ::1 at 2023-10-20 19:32:37 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 795)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 2224)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.0ms | Allocations: 2769)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-10-20 19:40:41 -0600
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout vendor/bundle/ruby/3.1.0/gems/railties-7.1.1/lib/rails/templates/layouts/application.html.erb
+  Rendering vendor/bundle/ruby/3.1.0/gems/railties-7.1.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of vendor/bundle/ruby/3.1.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [54 times] (Duration: 11.0ms | Allocations: 8687)
+  Rendered vendor/bundle/ruby/3.1.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.8ms | Allocations: 696)
+  Rendered vendor/bundle/ruby/3.1.0/gems/railties-7.1.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 20.0ms | Allocations: 15409)
+  Rendered layout vendor/bundle/ruby/3.1.0/gems/railties-7.1.1/lib/rails/templates/layouts/application.html.erb (Duration: 21.1ms | Allocations: 15682)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 16748)
+
+
+Started GET "/" for ::1 at 2023-10-20 21:29:30 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 789)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2205)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-20 21:29:35 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 534)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2065)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 2715)
+
+
+Started GET "/" for ::1 at 2023-10-20 21:29:37 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2075)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2581)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-10-20 21:29:41 -0600
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 788)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2426)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3880)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-10-20 21:29:52 -0600
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log in", "user"=>{"email"=>"andy@no.tiene", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andy@no.tiene"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 343ms (ActiveRecord: 20.5ms | Allocations: 10222)
+
+
+Started GET "/" for ::1 at 2023-10-20 21:29:52 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1417)
+
+
+Started GET "/home" for ::1 at 2023-10-20 21:29:52 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:19
+  Rendered home/index.html.erb within layouts/application (Duration: 37.9ms | Allocations: 7729)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 9414)
+Completed 200 OK in 79ms (Views: 45.0ms | ActiveRecord: 5.0ms | Allocations: 14788)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 21:30:00 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (1.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.9ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  Rendered payment/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 675)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2623)
+Completed 200 OK in 127ms (Views: 5.0ms | ActiveRecord: 9.6ms | Allocations: 21988)
+
+
+Started GET "/payment/new/1" for ::1 at 2023-10-20 21:40:50 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 49.5ms | Allocations: 11326)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 12987)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 13347)
+
+
