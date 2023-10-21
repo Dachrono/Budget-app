@@ -1,18 +1,18 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: bugget-app
+    databaseName: bugget_app_7i7u
+    user: bugget_app_7i7u_user
 
 services:
   - type: web
-    name: mysite
+    name: Budget-app
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: bugget-app
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
