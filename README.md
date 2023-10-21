@@ -79,7 +79,7 @@ Link to the presentation video
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://reactcapstonproject.onrender.com/)
+- [Live Demo Link](https://budget-app-hisl.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
