@@ -45,9 +45,9 @@ body {
 }
 
 .out {
-  width: 90%;
-  display: flex;
-  justify-content: end;
+  all: unset;
+  border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 .bar {
@@ -67,16 +67,13 @@ body {
   text-decoration: none;
 }
 
-.bar input {
-  all: unset;
-}
-
 .field {
   border-bottom: 1px solid rgba(152, 158, 164, 0.5);
 }
 
 .field input {
   width: 100%;
+  font-size: 20px;
   padding: 10px 5px 10px 5px;
   padding-left: 15px;
   border: none;
@@ -87,6 +84,7 @@ body {
   width: 100%;
   bottom: 0;
   display: flex;
+  white-space: nowrap;
   justify-content: center;
   background-color: #5fb523;
   margin-top: 25px;
@@ -94,11 +92,17 @@ body {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  font-size: 25px;
 }
 
 .button a {
   text-decoration: none;
-  padding: 5% 30% 5% 30%;
+  padding: 5% 20% 5% 20%;
   border: 1px solid white;
   color: white;
+}
+
+.btn {
+  all: unset;
+  font-size: 20px;
 }

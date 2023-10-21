@@ -18516,3 +18516,1822 @@ Processing by PaymentController#new as HTML
 Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 13347)
 
 
+Started GET "/" for ::1 at 2023-10-20 23:16:31 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 46ms (ActiveRecord: 10.7ms | Allocations: 10222)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:16:31 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:19
+  Rendered home/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 4915)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 6846)
+Completed 200 OK in 49ms (Views: 28.4ms | ActiveRecord: 1.2ms | Allocations: 11807)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:18:14 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.2ms | Allocations: 317)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 5287)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 7198)
+Completed 200 OK in 76ms (Views: 19.3ms | ActiveRecord: 13.8ms | Allocations: 18782)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:19:12 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 130)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 7353)
+Completed 200 OK in 42ms (Views: 35.4ms | ActiveRecord: 1.1ms | Allocations: 8763)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:19:42 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.2ms | Allocations: 311)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 5282)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 7185)
+Completed 200 OK in 55ms (Views: 19.0ms | ActiveRecord: 9.5ms | Allocations: 18710)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:20:02 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.9ms | Allocations: 130)
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 7306)
+Completed 200 OK in 36ms (Views: 26.1ms | ActiveRecord: 1.5ms | Allocations: 8715)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:20:17 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 130)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 7202)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.7ms | Allocations: 8469)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:20:36 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.7ms | Allocations: 130)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 7204)
+Completed 200 OK in 37ms (Views: 26.7ms | ActiveRecord: 0.9ms | Allocations: 8471)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:21:01 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.0ms | Allocations: 366)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4603)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 6512)
+Completed 200 OK in 52ms (Views: 17.1ms | ActiveRecord: 8.0ms | Allocations: 18086)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:21:10 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.8ms | Allocations: 310)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 5290)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 7193)
+Completed 200 OK in 54ms (Views: 20.8ms | ActiveRecord: 8.4ms | Allocations: 18686)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:21:12 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.2ms | Allocations: 130)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2782)
+Completed 200 OK in 22ms (Views: 13.5ms | ActiveRecord: 0.9ms | Allocations: 4216)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:21:16 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  Rendered payment/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 657)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2582)
+Completed 200 OK in 79ms (Views: 5.9ms | ActiveRecord: 9.9ms | Allocations: 16086)
+
+
+Started GET "/payment/new/1" for ::1 at 2023-10-20 23:21:30 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 2299)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 2638)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:21:32 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (1.8ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.6ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  Rendered payment/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 207)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 1925)
+Completed 200 OK in 56ms (Views: 12.7ms | ActiveRecord: 5.0ms | Allocations: 4568)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:21:51 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.3ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 18.3ms | Allocations: 7066)
+  Rendered payment/show.html.erb within layouts/application (Duration: 20.9ms | Allocations: 7764)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 9664)
+Completed 200 OK in 97ms (Views: 24.7ms | ActiveRecord: 15.1ms | Allocations: 30053)
+
+
+Started GET "/payment/new/1" for ::1 at 2023-10-20 23:22:00 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 771)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2300)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 2652)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:22:02 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (17.3ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 6.6ms | Allocations: 1191)
+  Rendered payment/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1384)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 2913)
+Completed 200 OK in 72ms (Views: 17.6ms | ActiveRecord: 22.9ms | Allocations: 5564)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:22:03 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms | Allocations: 1483)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:22:03 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 169)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2308)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3953)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 5783)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:22:05 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 683)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 2358)
+Completed 200 OK in 61ms (Views: 39.5ms | ActiveRecord: 1.2ms | Allocations: 3707)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:22:06 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 18ms (ActiveRecord: 0.8ms | Allocations: 1383)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:22:06 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 132)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1287)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2822)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.7ms | Allocations: 4143)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2023-10-20 23:22:09 -0600
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 10ms (ActiveRecord: 0.2ms | Allocations: 3247)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:22:09 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 982)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2420)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3247)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:22:11 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2073)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2576)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-20 23:26:08 -0600
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1256)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3155)
+Completed 200 OK in 25ms (Views: 10.9ms | ActiveRecord: 3.3ms | Allocations: 10420)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-10-20 23:26:11 -0600
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 779)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 2416)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 3824)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-10-20 23:26:17 -0600
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log in", "user"=>{"email"=>"andy@no.tiene", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andy@no.tiene"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 256ms (ActiveRecord: 0.3ms | Allocations: 3464)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:26:17 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1559)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:26:17 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.4ms | Allocations: 314)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 5325)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 7050)
+Completed 200 OK in 32ms (Views: 17.9ms | ActiveRecord: 3.0ms | Allocations: 11997)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:29:09 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 130)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 7307)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.6ms | Allocations: 8723)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:29:19 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.2ms | Allocations: 130)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 7202)
+Completed 200 OK in 58ms (Views: 46.4ms | ActiveRecord: 0.9ms | Allocations: 8482)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:29:25 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.0ms | Allocations: 130)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 7202)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.7ms | Allocations: 8496)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:29:31 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.8ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 3.2ms | Allocations: 1355)
+  Rendered payment/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1960)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3614)
+Completed 200 OK in 58ms (Views: 10.3ms | ActiveRecord: 8.9ms | Allocations: 17041)
+
+
+Started GET "/payment/new/1" for ::1 at 2023-10-20 23:29:33 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 19.1ms | Allocations: 774)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 2303)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 2641)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:29:51 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.4ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.6ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 3.7ms | Allocations: 1203)
+  Rendered payment/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1396)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2985)
+Completed 200 OK in 22ms (Views: 10.8ms | ActiveRecord: 1.5ms | Allocations: 5603)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:30:01 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 12ms (ActiveRecord: 2.7ms | Allocations: 1149)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:30:01 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.8ms | Allocations: 130)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1256)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2789)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 0.6ms | Allocations: 4073)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:30:26 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 130)
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 7298)
+Completed 200 OK in 58ms (Views: 48.0ms | ActiveRecord: 1.5ms | Allocations: 8577)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:30:42 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.8ms | Allocations: 130)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 7205)
+Completed 200 OK in 42ms (Views: 29.0ms | ActiveRecord: 1.0ms | Allocations: 8488)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:30:45 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.4ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 6.3ms | Allocations: 1191)
+  Rendered payment/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1384)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2927)
+Completed 200 OK in 43ms (Views: 13.8ms | ActiveRecord: 1.9ms | Allocations: 5509)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:31:04 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.8ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 7.2ms | Allocations: 1203)
+  Rendered payment/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1396)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 7351)
+Completed 200 OK in 62ms (Views: 30.7ms | ActiveRecord: 2.6ms | Allocations: 9933)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:31:34 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.5ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 7.6ms | Allocations: 1209)
+  Rendered payment/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 7351)
+Completed 200 OK in 49ms (Views: 30.3ms | ActiveRecord: 1.7ms | Allocations: 9934)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:31:41 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 6.8ms | Allocations: 1218)
+  Rendered payment/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1411)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 7370)
+Completed 200 OK in 49ms (Views: 26.2ms | ActiveRecord: 3.0ms | Allocations: 9952)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:31:48 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.0ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 7.0ms | Allocations: 1209)
+  Rendered payment/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 7360)
+Completed 200 OK in 70ms (Views: 38.3ms | ActiveRecord: 2.2ms | Allocations: 9943)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:32:17 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (1.3ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 10.6ms | Allocations: 1191)
+  Rendered payment/show.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1384)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 7337)
+Completed 200 OK in 70ms (Views: 36.6ms | ActiveRecord: 6.4ms | Allocations: 9920)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:32:23 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.2ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.6ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 4.0ms | Allocations: 1206)
+  Rendered payment/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1399)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 7343)
+Completed 200 OK in 34ms (Views: 21.1ms | ActiveRecord: 1.2ms | Allocations: 9926)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:32:30 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.3ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.0ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 4.2ms | Allocations: 1191)
+  Rendered payment/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1384)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 7339)
+Completed 200 OK in 65ms (Views: 45.0ms | ActiveRecord: 1.8ms | Allocations: 9921)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:32:40 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.7ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 6.8ms | Allocations: 1203)
+  Rendered payment/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1396)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 7349)
+Completed 200 OK in 60ms (Views: 25.4ms | ActiveRecord: 3.2ms | Allocations: 9932)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:33:40 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.3ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 8.0ms | Allocations: 1188)
+  Rendered payment/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1381)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 7339)
+Completed 200 OK in 42ms (Views: 29.7ms | ActiveRecord: 1.6ms | Allocations: 9921)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:33:50 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.4ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 6.0ms | Allocations: 1209)
+  Rendered payment/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 7360)
+Completed 200 OK in 42ms (Views: 25.4ms | ActiveRecord: 2.0ms | Allocations: 9943)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:33:55 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms | Allocations: 1145)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:33:55 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.9ms | Allocations: 130)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2794)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 4079)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:33:58 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 515)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2049)
+Completed 200 OK in 20ms (Views: 8.9ms | ActiveRecord: 0.6ms | Allocations: 3371)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:34:00 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 19ms (ActiveRecord: 7.3ms | Allocations: 1145)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:34:00 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.1ms | Allocations: 130)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2785)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.5ms | Allocations: 4086)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:34:02 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.6ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 7.8ms | Allocations: 1203)
+  Rendered payment/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1356)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2896)
+Completed 200 OK in 35ms (Views: 14.3ms | ActiveRecord: 3.3ms | Allocations: 5410)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:34:05 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms | Allocations: 1145)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:34:05 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.7ms | Allocations: 130)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2781)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 4063)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:35:53 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 1804)
+Completed 200 OK in 32ms (Views: 14.9ms | ActiveRecord: 2.2ms | Allocations: 3095)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:36:53 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 6240)
+Completed 200 OK in 42ms (Views: 33.6ms | ActiveRecord: 0.6ms | Allocations: 7500)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:37:16 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 6231)
+Completed 200 OK in 37ms (Views: 26.9ms | ActiveRecord: 0.6ms | Allocations: 7515)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:37:28 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1157)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:37:28 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.5ms | Allocations: 130)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2781)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 4079)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:37:31 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.2ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 3.8ms | Allocations: 1212)
+  Rendered payment/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1365)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2908)
+Completed 200 OK in 21ms (Views: 9.6ms | ActiveRecord: 1.1ms | Allocations: 5416)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:37:32 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 500)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2029)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2290)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:37:42 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 467)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 6426)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 6687)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:37:48 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2036)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 2297)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:39:01 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 491)
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 6449)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 6710)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:39:21 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 467)
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 6426)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 6688)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:39:23 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 473)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 2002)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 2264)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:39:45 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 488)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6438)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 6699)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:39:46 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 470)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 1999)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 2261)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:40:39 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 473)
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 6432)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 6693)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:40:40 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 491)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2023)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 2285)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:42:02 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 500)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 6460)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.0ms | Allocations: 6721)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:42:04 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 6.4ms | Allocations: 1203)
+  Rendered payment/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1356)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2885)
+Completed 200 OK in 33ms (Views: 16.1ms | ActiveRecord: 1.7ms | Allocations: 5393)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:42:23 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.8ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.6ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 5.7ms | Allocations: 1200)
+  Rendered payment/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1353)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 2922)
+Completed 200 OK in 45ms (Views: 18.1ms | ActiveRecord: 2.3ms | Allocations: 5431)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:42:24 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (2.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.7ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.9ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 18.6ms | Allocations: 1194)
+  Rendered payment/show.html.erb within layouts/application (Duration: 22.7ms | Allocations: 1347)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 2890)
+Completed 200 OK in 74ms (Views: 36.5ms | ActiveRecord: 3.9ms | Allocations: 5398)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:42:37 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.3ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 7.9ms | Allocations: 1203)
+  Rendered payment/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1356)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 2931)
+Completed 200 OK in 35ms (Views: 17.0ms | ActiveRecord: 1.5ms | Allocations: 5439)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:43:29 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 979)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2936)
+Completed 200 OK in 38ms (Views: 10.5ms | ActiveRecord: 5.2ms | Allocations: 10092)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:44:02 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 972)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2874)
+Completed 200 OK in 31ms (Views: 7.3ms | ActiveRecord: 4.2ms | Allocations: 9941)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:44:18 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.2ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 17.1ms | Allocations: 6809)
+  Rendered payment/show.html.erb within layouts/application (Duration: 18.6ms | Allocations: 7432)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 9080)
+Completed 200 OK in 82ms (Views: 17.9ms | ActiveRecord: 12.3ms | Allocations: 22605)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:44:19 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms | Allocations: 1480)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:44:19 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.5ms | Allocations: 169)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2327)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3972)
+Completed 200 OK in 22ms (Views: 13.5ms | ActiveRecord: 0.6ms | Allocations: 5784)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:44:24 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 536)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2083)
+Completed 200 OK in 18ms (Views: 9.7ms | ActiveRecord: 0.7ms | Allocations: 3420)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:45:07 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 707)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 7142)
+Completed 200 OK in 153ms (Views: 19.4ms | ActiveRecord: 5.1ms | Allocations: 21232)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:45:34 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 6237)
+Completed 200 OK in 32ms (Views: 23.8ms | ActiveRecord: 0.3ms | Allocations: 7737)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:45:35 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 1809)
+Completed 200 OK in 25ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 3069)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:45:36 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 1809)
+Completed 200 OK in 45ms (Views: 17.4ms | ActiveRecord: 5.4ms | Allocations: 3075)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:45:54 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 6238)
+Completed 200 OK in 30ms (Views: 23.3ms | ActiveRecord: 0.3ms | Allocations: 7495)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:53:24 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6239)
+Completed 200 OK in 76ms (Views: 22.9ms | ActiveRecord: 15.2ms | Allocations: 10407)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:54:29 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 6241)
+Completed 200 OK in 26ms (Views: 19.5ms | ActiveRecord: 0.6ms | Allocations: 7516)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:54:30 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1488)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:54:31 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 3.3ms | Allocations: 271)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2553)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4192)
+Completed 200 OK in 24ms (Views: 17.2ms | ActiveRecord: 1.0ms | Allocations: 5694)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:54:34 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 292)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 1825)
+Completed 200 OK in 19ms (Views: 9.4ms | ActiveRecord: 1.2ms | Allocations: 3115)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:54:36 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 25ms (ActiveRecord: 2.4ms | Allocations: 1166)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:54:36 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 130)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2781)
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 1.1ms | Allocations: 4063)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:54:39 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 1810)
+Completed 200 OK in 26ms (Views: 10.8ms | ActiveRecord: 0.6ms | Allocations: 3070)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:54:42 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 1148)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:54:42 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.4ms | Allocations: 130)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2781)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 0.7ms | Allocations: 4078)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:54:43 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.7ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 5.2ms | Allocations: 1341)
+  Rendered payment/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1906)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3560)
+Completed 200 OK in 84ms (Views: 15.6ms | ActiveRecord: 13.1ms | Allocations: 17166)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:54:46 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 739)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 2269)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 2607)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:54:55 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 6560)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 6822)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:55:07 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 366)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 1901)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2162)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:55:37 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 974)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2876)
+Completed 200 OK in 34ms (Views: 10.8ms | ActiveRecord: 5.0ms | Allocations: 9947)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:56:09 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 466)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 6522)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.0ms | Allocations: 6812)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:56:27 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 469)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 6422)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 6683)
+
+
+Started GET "/payment/new/10" for ::1 at 2023-10-20 23:56:35 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 472)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 6429)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms | Allocations: 6690)
+
+
+Started GET "/payment/10" for ::1 at 2023-10-20 23:56:41 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.3ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 10]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.5ms | Allocations: 479)
+  Rendered payment/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1114)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2776)
+Completed 200 OK in 102ms (Views: 8.7ms | ActiveRecord: 7.1ms | Allocations: 23896)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:56:43 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 998)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2430)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3304)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:56:50 -0600
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2073)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 2567)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:56:58 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 40ms (ActiveRecord: 11.1ms | Allocations: 6784)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:56:58 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.7ms | Allocations: 178)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2348)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 3993)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.8ms | Allocations: 5809)
+
+
+Started GET "/home/new" for ::1 at 2023-10-20 23:57:01 -0600
+Processing by HomeController#new as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 535)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2068)
+Completed 200 OK in 24ms (Views: 12.5ms | ActiveRecord: 2.9ms | Allocations: 3401)
+
+
+Started GET "/" for ::1 at 2023-10-20 23:57:04 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 35ms (ActiveRecord: 0.7ms | Allocations: 1155)
+
+
+Started GET "/home" for ::1 at 2023-10-20 23:57:04 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.6ms | Allocations: 130)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2781)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 0.7ms | Allocations: 4090)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:57:06 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (1.8ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 14.1ms | Allocations: 1212)
+  Rendered payment/show.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1405)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 2934)
+Completed 200 OK in 63ms (Views: 26.2ms | ActiveRecord: 5.4ms | Allocations: 5576)
+
+
+Started GET "/payment/new/1" for ::1 at 2023-10-20 23:57:07 -0600
+Processing by PaymentController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering payment/new.html.erb within layouts/application
+  Rendered payment/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 491)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 2021)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms | Allocations: 2283)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-20 23:58:40 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (1.5ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 14.3ms | Allocations: 1191)
+  Rendered payment/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 1384)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 2913)
+Completed 200 OK in 72ms (Views: 28.2ms | ActiveRecord: 4.1ms | Allocations: 5495)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:02:00 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (4.2ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 7.0ms | Allocations: 1200)
+  Rendered payment/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 8165)
+Completed 200 OK in 71ms (Views: 32.3ms | ActiveRecord: 7.2ms | Allocations: 10747)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:02:15 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (1.0ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.1ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 21.6ms | Allocations: 1212)
+  Rendered payment/show.html.erb within layouts/application (Duration: 22.8ms | Allocations: 1405)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 8305)
+Completed 200 OK in 76ms (Views: 43.6ms | ActiveRecord: 4.2ms | Allocations: 10887)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:02:55 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.4ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 7.4ms | Allocations: 1191)
+  Rendered payment/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1384)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2958)
+Completed 200 OK in 39ms (Views: 15.9ms | ActiveRecord: 2.7ms | Allocations: 5540)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:05:11 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.4ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 8.7ms | Allocations: 1215)
+  Rendered payment/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1408)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 2991)
+Completed 200 OK in 37ms (Views: 19.5ms | ActiveRecord: 2.3ms | Allocations: 5573)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:05:37 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.9ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.4ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 9.4ms | Allocations: 1194)
+  Rendered payment/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 8503)
+Completed 200 OK in 72ms (Views: 46.9ms | ActiveRecord: 3.0ms | Allocations: 11085)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:05:38 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 4.0ms | Allocations: 1218)
+  Rendered payment/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1411)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2944)
+Completed 200 OK in 26ms (Views: 10.6ms | ActiveRecord: 1.4ms | Allocations: 5526)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:05:39 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (1.9ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 13.7ms | Allocations: 1197)
+  Rendered payment/show.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1390)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 2926)
+Completed 200 OK in 63ms (Views: 29.6ms | ActiveRecord: 4.2ms | Allocations: 5508)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:07:03 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.2ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 4.9ms | Allocations: 1221)
+  Rendered payment/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1414)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 8558)
+Completed 200 OK in 47ms (Views: 34.6ms | ActiveRecord: 1.3ms | Allocations: 11141)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:07:25 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.4ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 5.1ms | Allocations: 1203)
+  Rendered payment/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1396)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2937)
+Completed 200 OK in 36ms (Views: 13.2ms | ActiveRecord: 2.6ms | Allocations: 5519)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:08:46 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.4ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 5.8ms | Allocations: 1224)
+  Rendered payment/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1417)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 8531)
+Completed 200 OK in 46ms (Views: 24.4ms | ActiveRecord: 2.3ms | Allocations: 11114)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:09:36 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 6.4ms | Allocations: 1194)
+  Rendered payment/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 8535)
+Completed 200 OK in 53ms (Views: 31.0ms | ActiveRecord: 2.0ms | Allocations: 11117)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:16:32 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (1.2ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.9ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 5.6ms | Allocations: 1196)
+  Rendered payment/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1389)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 8302)
+Completed 200 OK in 79ms (Views: 28.7ms | ActiveRecord: 14.4ms | Allocations: 13819)
+
+
+Started GET "/" for ::1 at 2023-10-21 00:16:35 -0600
+Processing by SplashController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/splash_controller.rb:3:in `index'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms | Allocations: 1160)
+
+
+Started GET "/home" for ::1 at 2023-10-21 00:16:35 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 0.9ms | Allocations: 130)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2786)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 4084)
+
+
+Started GET "/home" for ::1 at 2023-10-21 00:16:47 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered partials/_logout.html.erb (Duration: 1.7ms | Allocations: 130)
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 7225)
+Completed 200 OK in 87ms (Views: 55.3ms | ActiveRecord: 3.0ms | Allocations: 8513)
+
+
+Started GET "/payment/1" for ::1 at 2023-10-21 00:16:52 -0600
+Processing by PaymentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payment_controller.rb:3:in `show'
+  [1m[36mCategoryPayment Load (0.6ms)[0m  [1m[34mSELECT "category_payments".* FROM "category_payments" WHERE "category_payments"."category_id" = $1 ORDER BY "category_payments"."created_at" DESC[0m  [["category_id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  [1m[36mPayment Load (0.7ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."id" IN ($1, $2, $3)[0m  [["id", 25], ["id", 2], ["id", 1]]
+  ↳ app/controllers/payment_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering payment/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_logout.html.erb:1
+  Rendered partials/_logout.html.erb (Duration: 5.5ms | Allocations: 1200)
+  Rendered payment/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2922)
+Completed 200 OK in 26ms (Views: 10.6ms | ActiveRecord: 2.0ms | Allocations: 5504)
+
+

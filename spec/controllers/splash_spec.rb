@@ -1,28 +1,28 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
-  it 'is valid with valid attributes' do
-    user = build(:user)
-    expect(user).to be_valid
-  end
+RSpec.describe SplashController, type: :controller do
+  describe 'GET #index' do
+    context 'when the user is not signed in' do
+      it 'renders the index template' do
+        get :index
+        expect(response).to render_template(:index)
+      end
 
-  it 'is not valid without a name' do
-    user = build(:user, name: nil)
-    expect(user).not_to be_valid
-  end
+      it 'does not redirect to the home page' do
+        get :index
+        expect(response).not_to redirect_to(home_index_path)
+      end
+    end
 
-  it 'has many categories' do
-    user = User.reflect_on_association(:categories)
-    expect(user.macro).to eq(:has_many)
-  end
+    context 'when the user is signed in' do
+      before do
+        sign_in create(:user)
+      end
 
-  it 'has many payments' do
-    user = User.reflect_on_association(:payments)
-    expect(user.macro).to eq(:has_many)
-  end
-
-  it 'is confirmable' do
-    user = create(:user)
-    expect(user.confirmed?).to be true
+      it 'redirects to the home page' do
+        get :index
+        expect(response).to redirect_to(home_index_path)
+      end
+    end
   end
 end
